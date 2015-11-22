@@ -1,4 +1,4 @@
-
+// This is part of @OsandaMalith's HangMan Game
 const static char *banner =
 "\t\t _____                _____         \n"
 "\t\t|  |  |___ ___ ___   |     |___ ___ \n"
