@@ -46,6 +46,7 @@ main () {
 		case 4:update(); break;
 		case 5:display(list);break;
 		case 6:return 0;
+		default:puts("[!] Input a valid choice");
 		} 
 	}
 }
@@ -185,9 +186,11 @@ void update() {
 		return;
 	} 
     fflush(stdin);
-    
-    puts("[?] What do you want to update?");
+    for(;;) {
+    printf("[?] What do you want to update?\n[*] 0 - Exit\n>> ");
     scanf("%i", &in);
+    if(!in) break;
+	fflush(stdin);
     
     switch(in) {
     	case 1:
@@ -233,5 +236,11 @@ void update() {
 			fflush(stdin);
 			p->nic = nic;
 			break;
+		
+		default:
+			puts("[!] Enter a valid Number");
     }
+	puts("[+] Entry Updated Successfully\n");
+	display(p);
+	}
 }
