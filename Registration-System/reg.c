@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 struct node {
-	int id;
+	int  id;
 	char name[100];
 	char addr[200];
 	int  age;
@@ -26,16 +26,16 @@ void Remove();
 int
 main () {
 	int input;
-	puts("[~] Peoples Bank Customer Loan Service System");
-	puts("[+] Coded by @OsandaMalith");
+	puts("[~] Peoples Bank Customer Loan Service System\n");
 	for(;;) {
 	printf(
 	"\n\n"
 	"1. Register a Customer\n"
 	"2. Search a Customer\n"
 	"3. Unregister a Customer\n"
-	"4. Display\n"
-	"5. Exit\n"
+	"4. Update a Customer\n"
+	"5. Display\n"
+	"6. Exit\n"
 	">> "
 	);
 	scanf("%i", &input);
@@ -43,9 +43,9 @@ main () {
 		case 1:Insert();break;
 		case 2:Search();break;
 		case 3:Remove();break;
-		case 4:display(list);break;
-		case 5:return 0;
-		case 6: update(); break;
+		case 4:update(); break;
+		case 5:display(list);break;
+		case 6:return 0;
 		} 
 	}
 }
