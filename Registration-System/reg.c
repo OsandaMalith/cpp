@@ -2,6 +2,11 @@
 #include <string.h>
 #include <stdlib.h>
 
+/*
+ * CC-BY : Osanda Malith Jayathissa (@OsandaMalith)
+ * Website: http://osandamalith.wordpress.com/
+ */
+
 struct node {
 	int  id;
 	char name[100];
@@ -26,7 +31,10 @@ void Remove();
 int
 main () {
 	int input;
-	puts("[~] Peoples Bank Customer Loan Service System\n");
+	puts(
+		"[~] Peoples Bank Customer Loan Service System\n"
+		"[+] Coded by : Osanda Malith Jayathissa\n"
+	);
 	for(;;) {
 	printf(
 	"\n\n"
