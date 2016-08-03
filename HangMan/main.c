@@ -141,7 +141,7 @@ int _tmain(int argc, _TCHAR* argv[]) {
 		con = tolower(con);
 		system("cls");
 	}
-	MessageBox(NULL, TEXT("Text Generator Coded by Osanda Malith\nFollow @OsandaMalith"), TEXT("-=About :)=-"), MB_OK | MB_ICONASTERISK | MB_RTLREADING | MB_RIGHT); exit(0);
+	MessageBox(NULL, TEXT("HangMan Coded by Osanda Malith\nFollow @OsandaMalith"), TEXT("-=About :)=-"), MB_OK | MB_ICONASTERISK | MB_RTLREADING | MB_RIGHT); exit(0);
 
 	return 0;
 }
